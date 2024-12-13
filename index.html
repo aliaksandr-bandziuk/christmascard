@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry Christmas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F4F4F4;
+        }
+        .email-container {
+            max-width: 700px;
+            margin: 20px auto;
+            background-color: #D3E9F1;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .header {
+            background-color: #D3E9F1;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            color: rgb(61, 106, 255);
+        }
+        .body {
+            padding: clamp(1.875rem, 1.25rem + 2.5vw, 3.125rem);
+            text-align: center;
+            position: relative;
+        } 
+        .body__content {
+          position: relative;
+          z-index: 1;
+        }
+        .bg-tree {
+          position: absolute;
+          bottom: 0;
+          right: -60px;
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #D3E9F1;
+            background-size: contain;
+            opacity: 0.7;
+          }
+        }
+        .bg-logo {
+          position: absolute;
+          bottom: 5px;
+          left: 5px;
+        }
+        .paragraph {
+          font-size: clamp(1.125rem, 1.063rem + 0.25vw, 1.25rem);
+          color: #333333;
+          margin: 10px 0;
+
+          &:last-of-type {
+            margin-bottom: clamp(1.875rem, 1.25rem + 2.5vw, 3.125rem);
+          }
+        }
+        .paragraph-big {
+          font-size: clamp(1.25rem, 1.125rem + 0.5vw, 1.5rem);
+          color: #335247;
+          margin: 25px 0;
+        }
+        /* .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #457b9d;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        } */
+        .cta-button {
+          display: inline-block;
+          text-decoration: none;
+          position: relative;
+          padding: 10px 20px;
+          border-radius: 7px;
+          border: 1px solid rgb(61, 106, 255);
+          font-size: 14px;
+          text-transform: uppercase;
+          font-weight: 600;
+          letter-spacing: 2px;
+          background: rgb(61, 106, 255);
+          color: #fff;
+          overflow: hidden;
+          box-shadow: 0 0 0 0 transparent;
+          -webkit-transition: all 0.2s ease-in;
+          -moz-transition: all 0.2s ease-in;
+          transition: all 0.2s ease-in;
+        }
+
+        .cta-button:hover {
+          background: rgb(61, 106, 255);
+          box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+          -webkit-transition: all 0.2s ease-out;
+          -moz-transition: all 0.2s ease-out;
+          transition: all 0.2s ease-out;
+        }
+
+        .cta-button:hover::before {
+          -webkit-animation: sh02 0.5s 0s linear;
+          -moz-animation: sh02 0.5s 0s linear;
+          animation: sh02 0.5s 0s linear;
+        }
+
+        .cta-button::before {
+          content: '';
+          display: block;
+          width: 0px;
+          height: 86%;
+          position: absolute;
+          top: 7%;
+          left: 0%;
+          opacity: 0;
+          background: #fff;
+          box-shadow: 0 0 50px 30px #fff;
+          -webkit-transform: skewX(-20deg);
+          -moz-transform: skewX(-20deg);
+          -ms-transform: skewX(-20deg);
+          -o-transform: skewX(-20deg);
+          transform: skewX(-20deg);
+        }
+
+        @keyframes sh02 {
+          from {
+            opacity: 0;
+            left: 0%;
+          }
+
+          50% {
+            opacity: 1;
+          }
+
+          to {
+            opacity: 0;
+            left: 100%;
+          }
+        }
+
+        .cta-button:active {
+          box-shadow: 0 0 0 0 transparent;
+          -webkit-transition: box-shadow 0.2s ease-in;
+          -moz-transition: box-shadow 0.2s ease-in;
+          transition: box-shadow 0.2s ease-in;
+        }
+        .footer {
+            background-color: #f1faee;
+            color: #888888;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <h1>SCANM2 wishes you a Merry Christmas!</h1>
+        </div>
+        <!-- Body -->
+        <div class="body">
+          <div class="body__content">
+            <p class="paragraph">
+              As the year comes to a close, we want to take a moment to express our gratitude for your trust and cooperation. It’s been a pleasure working together, and we’re truly thankful to have you with us.
+            </p>
+            <p class="paragraph">
+              To celebrate the season, we’ve prepared a special gift for you:
+            </p>
+            <p class="paragraph-big">
+              <strong>20% discount coupon for your next order!</strong>
+            </p>
+            <p class="paragraph">
+              This coupon is valid until March 1, 2025.
+            </p>
+            <p class="paragraph">
+              We wish you a joyful holiday season and a Merry Christmas. May the new year bring you happiness, health, and success!
+            </p>
+            <a href="https://scanm2.com/contacts/?utm_source=mailchimp&utm_medium=email&utm_campaign=christmas2024&utm_term=-20%25" class="cta-button" target="_blank">Order Scanning now</a>
+          </div>
+          <div class="bg-tree">
+            <svg width="300px" height="300px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path fill="#662113" d="M22 33c0 2.209-1.791 3-4 3s-4-.791-4-3l1-9c0-2.209.791-2 3-2s3-.209 3 2l1 9z"></path><path fill="#5C913B" d="M31.406 27.297C24.443 21.332 21.623 12.791 18 12.791c-3.623 0-6.443 8.541-13.405 14.506c-2.926 2.507-1.532 3.957 2.479 3.667c3.576-.258 6.919-1.069 10.926-1.069s7.352.812 10.926 1.069c4.012.29 5.405-1.16 2.48-3.667z"></path><path fill="#3E721D" d="M29.145 24.934C23.794 20.027 20.787 13 18 13c-2.785 0-5.793 7.027-11.144 11.934c-4.252 3.898 5.572 4.773 11.144 0c5.569 4.773 15.396 3.898 11.145 0z"></path><path fill="#5C913B" d="M29.145 20.959C23.794 16.375 20.787 9.811 18 9.811c-2.785 0-5.793 6.564-11.144 11.148c-4.252 3.642 5.572 4.459 11.144 0c5.569 4.459 15.396 3.642 11.145 0z"></path><path fill="#3E721D" d="M26.7 17.703C22.523 14.125 20.176 9 18 9c-2.174 0-4.523 5.125-8.7 8.703c-3.319 2.844 4.35 3.482 8.7 0c4.349 3.482 12.02 2.844 8.7 0z"></path><path fill="#5C913B" d="M26.7 14.726c-4.177-3.579-6.524-8.703-8.7-8.703c-2.174 0-4.523 5.125-8.7 8.703c-3.319 2.844 4.35 3.481 8.7 0c4.349 3.481 12.02 2.843 8.7 0z"></path><path fill="#3E721D" d="M25.021 12.081C21.65 9.193 19.756 5.057 18 5.057c-1.755 0-3.65 4.136-7.021 7.024c-2.679 2.295 3.511 2.809 7.021 0c3.51 2.81 9.701 2.295 7.021 0z"></path><path fill="#5C913B" d="M25.021 9.839C21.65 6.951 19.756 2.815 18 2.815c-1.755 0-3.65 4.136-7.021 7.024c-2.679 2.295 3.511 2.809 7.021 0c3.51 2.81 9.701 2.295 7.021 0z"></path><path fill="#3E721D" d="M23.343 6.54C20.778 4.342 19.336 1.195 18 1.195c-1.335 0-2.778 3.148-5.343 5.345c-2.038 1.747 2.671 2.138 5.343 0c2.671 2.138 7.382 1.746 5.343 0z"></path><path fill="#5C913B" d="M23.343 5.345C20.778 3.148 19.336 0 18 0c-1.335 0-2.778 3.148-5.343 5.345c-2.038 1.747 2.671 2.138 5.343 0c2.671 2.138 7.382 1.746 5.343 0z"></path></svg>
+          </div>
+          <div class="bg-logo">
+            <img src="https://scanm2.com/wp-content/uploads/2024/03/cropped-scanm2-logo-1.png" alt="SCANM2 logo" width="150">
+          </div>
+        </div>
+        <!-- Footer -->
+        <div class="footer">
+            <p>Warmest wishes, SCANM2 Team</p>
+        </div>
+    </div>
+</body>
+</html>
